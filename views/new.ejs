@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+  <div class="container">
+  <form action="/Products" method="POST">
+    <div class="mb-3">
+      <label class="form-label">Brand</label>
+      <input type="text" class="form-control" name= "Brand" placeholder="Brand">
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" name = "Name" placeholder="Name">
+    </div>
+  
+    <div class="mb-3">
+      <label class="form-label">url</label>
+      <input type="text" class="form-control" name="url" placeholder=" Image URL">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Add new Product</button>
+    <a href="/Products">Back</a>
+ </form>
+<%- include("partials/footer.ejs") %>
